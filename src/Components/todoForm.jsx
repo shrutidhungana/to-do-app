@@ -30,7 +30,8 @@ const TodoForm = (props) => {
     }, [edit]);
 
   return (
-    <div>
+      <div>
+          
       <form className="todo-form" onSubmit={handleSubmit}>
         <input
           name="input"
@@ -42,8 +43,9 @@ const TodoForm = (props) => {
         <button className="todo-button" type="submit" >
           {isEdit?"Edit Todo":"Add Todo"}
         </button>
-      </form>
-    </div>
+              </form>
+              </div>
+    
   );
 };
 

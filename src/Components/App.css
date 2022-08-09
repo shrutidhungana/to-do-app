@@ -1,59 +1,94 @@
-body{
-     background-image:linear-gradient(90deg,#ff4500 ,#ff8c00 ,#ff69b4 ) 
+body {
+  background-image: linear-gradient(90deg, #ff4500, #ff8c00, #ff69b4);
+  color: white;
 }
 
-.todo-form{
+.to-do-container{
     display:flex;
-    width: 80%;
+    align-items: center;
+    justify-content: center;
 }
 
-.todo-input{
-    padding: 14px 32px 14px 16px;
-    border-radius: 4px 0 0 4px;
-    border: 3px solid #5d0cff;
-    outline:none;
-    display:flex;
-    flex: 2;
-}
-
-.todo-button{
-    padding: 16px;
-    border: none;
-    border-radius: 0 4px 40x 0;
-    cursor: pointer;
-    outline: none;
-    color: #fff;
-    font-size: 18px;
-    background:darkblue;
-    text-transform: capitalize;
-}
-
-.todo-item-wrapper{
-    background-color: #ba55d3;
-    display:flex;
-     justify-content: space-between;
-     margin: 10px 5px 10px 5px;
+ .todo-list{
+     width: 80%;
+     display:flex;
+     flex-direction: column;
      
-     border: 2px solid #ba55d3;
-     border-radius: 5px;
+ }
+.todo-form {
+  display: flex;
+  width: 100%;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 3px solid #5d0cff;
+  outline: none;
+  display: flex;
+  flex: 2;
+  margin-left: 2px;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 40x 0;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  background: darkblue;
+  text-transform: capitalize;
+}
+
+.todo-item-wrapper {
+  background-color: #ba55d3;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px 10px 5px;
+  width: 80%;
+  border: 2px solid #ba55d3;
+  border-radius: 5px;
+}
+
+.todo-text {
+  text-align: justify;
+}
+
+.delete {
+  color: white;
+  margin-top: 15px;
+  font-size: 25px;
+}
+
+.edit {
+  color: white;
+  font-size: 25px;
+}
+
+.search-todos-wrapper {
+  width: 80%;
+}
+
+.search-input {
+  width: 80%;
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  margin: 0 0 10px 2px;
+}
+ h3{
+     text-align: justify;
+     font-size: small;
      
+ }
 
-}
-
-.todo-text{
-    
-    text-align: justify;
-   
-
-}
-
-.delete{
-    color: white;
-    margin-top: 15px;
-    
-}
-
-.edit{
-    color:white;
-}
-
+ .no-todo{
+     color:gray;
+     font-size: 50px;
+     display:flex;
+     align-items: center;
+     justify-content: center;
+ }
