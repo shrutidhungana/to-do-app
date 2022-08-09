@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 const TodoForm = (props) => {
-    const { getNewlyCreatedTodoItem } = props;
+    const {getNewlyCreatedTodoItem} = props;
     const [input, setInput] = useState("");
     const handleOnChange = (e) => {
         const { value } = e.target;
@@ -10,10 +10,13 @@ const TodoForm = (props) => {
 
   const handleSubmit = (e) => {
       e.preventDefault();
+     
       const newCreatedToDo = {
           id: Math.floor(Math.random() * 1000),
           text: input
-      }
+      };
+      getNewlyCreatedTodoItem(newCreatedToDo);
+      setInput("");
   };
   return (
     <div>
